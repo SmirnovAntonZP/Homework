@@ -4,7 +4,7 @@ Console.WriteLine("Enter number");
 int n = int.Parse(Console.ReadLine() ?? "0");
 int a = 1;
 
-if (n > 0);
+if (n > 0)
 {
     while (a <= n)
     {
