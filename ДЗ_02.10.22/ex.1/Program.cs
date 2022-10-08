@@ -5,11 +5,21 @@
 // Первый способ решения
 
 Console.Write("Введите номер дня недели: ");
-int n = Convert.ToInt32(Console.ReadLine());
-if (n == 6 && n == 7)
-    Console.Write(n + " - является выходным.");
+int n = int.Parse(Console.ReadLine() ?? "0");
+if(n >= 1 && n < 6 )
+{
+    Console.WriteLine(n + " - будний день");
+}
+else if (n < 8 && n > 5)
+{
+    Console.WriteLine(n + " - выходной день");
+}
+
 else
-    Console.Write(n + "- не является выходным.");
+{
+    Console.WriteLine(n + " - не является номером дня недели");
+}
+
 
 /* Второй способ решения
 
@@ -34,24 +44,14 @@ else
 */
 
 
-/* Третий способ решения
+//Третий способ решения
 
-   Console.Write("Введите номер дня недели: ");
-int n = int.Parse(Console.ReadLine() ?? "0");
-if(n >= 1 && n < 6 )
-{
-    Console.WriteLine(n + " - Будний день");
-}
-else if (n < 8 && n > 5)
-{
-    Console.WriteLine(n + " - выходной день");
-}
-
+/* Console.Write("Введите номер дня недели: ");
+int n = Convert.ToInt32(Console.ReadLine());
+if (n == 6 && n == 7)
+    Console.Write(n + " - является выходным.");
 else
-{
-    Console.WriteLine(n + "Не является номером дня недели");
-}
-*/ 
+    Console.Write(n + "- не является выходным.");*/ 
 
 
 
