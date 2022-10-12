@@ -10,7 +10,7 @@ if (n >= 1)
         double result = Math.Pow(count, 3);
         if (result % 2 == 0)
         {
-            Console.WriteLine(result);
+            Console.WriteLine(count + " ^ 3 = " + result);
             count++;
         }
         else
