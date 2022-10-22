@@ -32,8 +32,10 @@ int[] CopyArray(int[] array)
     return ArrayCopy;
 }
 
-Console.Write("Заданный массив: ");
+Console.WriteLine("Заданный массив: ");
 PrintArray(Array);
-Console.Write("Скопированный массив: ");
+Console.WriteLine();
+Console.WriteLine("Скопированный массив: ");
 int[] Array_copy = CopyArray(Array);
 PrintArray(Array_copy);
+Console.WriteLine();
