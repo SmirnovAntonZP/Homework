@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// 2 - Задать двумерный массив следующим правилом: Aₘₙ = m+n
 Console.WriteLine("Hello, World!");

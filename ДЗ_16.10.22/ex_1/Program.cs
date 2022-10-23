@@ -5,19 +5,9 @@ int m = int.Parse(Console.ReadLine() ?? "0");
 Console.Write("Введите количество столбцов матрицы (n): ");
 int n = int.Parse(Console.ReadLine() ?? "0");
 
-Random random = new Random();
-void FillArray(int[,] RandomArray)  
-{
-    for (int i = 0; i < RandomArray.GetLength(0); i++)
-    {
-        for (int j = 0; j < RandomArray.GetLength(1); j++)
-        {
-            RandomArray[i,j] = random.Next(0,10);
-        }
-    }
-}
+double[,] RandomArray = new double[m, n];
 
-void PrintArray(int[,] RandomArray)
+void PrintArray(double[,] RandomArray)
 {
     for (int i = 0; i < RandomArray.GetLength(0); i++)
     {
@@ -30,7 +20,6 @@ void PrintArray(int[,] RandomArray)
 
 }
 
-int[,] RandomArray = new int [m, n]; 
 
 FillArray(RandomArray);
 Console.WriteLine();
